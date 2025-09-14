@@ -1,0 +1,206 @@
+/* ---------- Tablet Responsive (max-width: 1024px) ---------- */
+/* @media (max-width: 1024px) {
+  .boxes {
+    margin-bottom: 24px;
+  }
+
+  .about-section .row {
+    flex-direction: column;
+  }
+
+  .main-card,
+  .project-card,
+  .service-card
+   {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .expert-area-card,
+  .work-experince-card,
+  .lets-together
+  { 
+     width: 92% !important;
+    max-width: 100% !important;
+  }
+
+  .icon-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .text-lg, .text-lg-2, .text-lg-3, .text-lg-4 {
+    font-size: 26px !important;
+    line-height: 34px !important;
+  }
+
+  .testimonial-section {
+    padding: 0 10px;
+  }
+
+  .slider-container {
+    overflow-x: auto;
+  }
+
+  .slider-track {
+    display: flex;
+    gap: 16px;
+  }
+
+  .testimonial-card {
+    flex-shrink: 0;
+    width: 280px;
+  }
+
+  .fotter-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px;
+    height: auto;
+  }
+} */
+
+
+/* ---------- Mobile Responsive (max-width: 576px) ---------- */
+
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .text-lg,
+  .text-lg-2,
+  .text-lg-3,
+  .text-lg-4 {
+    font-size: 32px !important;
+    line-height: 30px !important;
+  }
+
+
+      .main-card, .project-card, .service-card   {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+     
+       .expert-area-card, .work-experince-card, .lets-tog
+      {
+        width: 85% !important;
+        max-width: 100%;
+    }
+
+    .custom-row {
+    
+     margin-left: 0;
+    gap: 18px;
+    }
+
+
+  .text-md, .text-md-2, .text-sm {
+    font-size: 14px !important;
+  }
+
+  .p-small {
+    font-size: 11px !important;
+  }
+
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .mail-btn {
+    margin-left: 0;
+  }
+
+  .icon-container {
+  text-align: center;
+        display: flex;
+        flex-direction: row;
+    }
+
+  .socials {
+    gap: 6px;
+  }
+
+
+.inner-project-card {
+   
+    width: 293px;
+}
+
+.project-item img {
+    width: 269px;
+}
+ 
+
+
+
+
+  .slider-track {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    gap: 12px;
+  }
+
+  .testimonial-card {
+    min-width: 250px;
+    scroll-snap-align: start;
+  }
+
+  .collab-card {
+    padding: 16px;
+  }
+
+  .collab-card h1 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .collab-card p {
+    font-size: 13px;
+  }
+
+  .call-btn, .mail-btn {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+
+  .fotter-bar {
+    padding: 10px;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
