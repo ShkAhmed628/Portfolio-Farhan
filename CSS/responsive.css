@@ -1,12 +1,10 @@
-/* ---------- Tablet Responsive (max-width: 1024px) ---------- */
-/* @media (max-width: 1024px) {
+/* ---------- Tablet Responsive (max-width: 1024px) ----------  */
+@media (max-width: 1024px) {
   .boxes {
     margin-bottom: 24px;
   }
 
-  .about-section .row {
-    flex-direction: column;
-  }
+  
 
   .main-card,
   .project-card,
@@ -17,8 +15,8 @@
   }
 
   .expert-area-card,
-  .work-experince-card,
-  .lets-together
+  .work-experince-card
+
   { 
      width: 92% !important;
     max-width: 100% !important;
@@ -56,13 +54,13 @@
 
   .fotter-bar {
     flex-direction: column;
-    align-items: flex-start;
+
     gap: 12px;
     padding: 12px;
     height: auto;
   }
-} */
 
+}
 
 /* ---------- Mobile Responsive (max-width: 576px) ---------- */
 
@@ -76,19 +74,103 @@
   .text-lg-2,
   .text-lg-3,
   .text-lg-4 {
-    font-size: 32px !important;
+    font-size: 22px !important;
     line-height: 30px !important;
   }
 
 
+
+                  /* NAVABR SECTION RESPONSIVE */
+
+
+
+.offcanvas-nav .nav-link {
+    width: 150px;
+
+}
+  .navbar-nav .nav-link i {
+
+   
+     background-image: none;
+    backdrop-filter: blur(10px);
+     box-shadow: none;
+}
+
+.navbar-nav .nav-link.active i {
+    padding: 5px;
+}
+.btn-lets-talk
+
+  {
+     
+      width: 111px;
+      display: flex;
+      justify-content: center;
+      margin-left: 0;
+  }
+.navbar-brand {
+    font-size: 25px;
+    font-weight: bold;
+    color: white !important;
+    margin-left: -15px;
+}
+
+
+/* collab-card  */
+
+  .collab-card {
+    padding: 16px;
+  }
+
+  .collab-card h1 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .collab-card p {
+    font-size: 13px;
+  }
+
+
+  /* fotter bar  */
+ 
+
+    .fotter-bar a {
+    align-items: center;
+    padding-bottom: 27px;
+    font-size: 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    line-height: 0;
+    padding: 18px;
+    height: auto;
+    }
+    
+
+
+    
+
+
+/* main card white SECTION RESPONSIVE start*/
+
+
+
+
       .main-card, .project-card, .service-card   {
-        width: 100% !important;
+        width: 100%;
         max-width: 100% !important;
     }
      
-       .expert-area-card, .work-experince-card, .lets-tog
+       .expert-area-card, .work-experince-card
       {
-        width: 85% !important;
+        width: 100% !important;
+        max-width: 100%;
+    }
+
+    .lets-tog
+    {
+        width: 100% !important;
         max-width: 100%;
     }
 
@@ -100,8 +182,15 @@
 
 
   .text-md, .text-md-2, .text-sm {
-    font-size: 14px !important;
+    font-size: 16px !important;
   }
+
+
+    .experience-list span.text-sm {
+       
+        margin-left: 173px;
+        margin-top: -42%;
+    }
 
   .p-small {
     font-size: 11px !important;
@@ -121,11 +210,16 @@
   .mail-btn {
     margin-left: 0;
   }
+   .call-btn, .mail-btn {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
 
   .icon-container {
   text-align: center;
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
     }
 
   .socials {
@@ -141,47 +235,83 @@
 .project-item img {
     width: 269px;
 }
- 
+.lets-together {
+    width: 319px;
+    flex-shrink: 0;
+}
 
 
 
 
-  .slider-track {
-    display: flex;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    gap: 12px;
+
+/* ABOUT_SECTION RESPONSIVE start */
+
+.about-wrapper,.resume-wrapper
+{
+      width: 326px;
+    margin-left: 9px;
+     padding-top: 20px;
+}
+    .navbar-brand {
+        font-size: 14px;
+        margin-left: 0px;
+    }
+
+  .stats-container {
+  flex-direction: column;
+  }
+
+
+ /* testmonial section responsive start */
+
+
+  .testimonial-section {
+    padding: 10px 15px;
+  }
+
+  .slider-container {
+    overflow-x: hidden;
   }
 
   .testimonial-card {
-    min-width: 250px;
-    scroll-snap-align: start;
-  }
-
-  .collab-card {
+    width: 100%;
+    margin-right: -3px;
     padding: 16px;
-  }
-
-  .collab-card h1 {
-    font-size: 22px;
-    line-height: 30px;
-  }
-
-  .collab-card p {
-    font-size: 13px;
-  }
-
-  .call-btn, .mail-btn {
-    font-size: 13px;
-    padding: 8px 12px;
-  }
-
-  .fotter-bar {
-    padding: 10px;
-    flex-direction: column;
-    gap: 6px;
     font-size: 14px;
   }
+
+  .testimonial-card img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .testimonial-name {
+    font-size: 15px;
+  }
+
+  .testimonial-title {
+    font-size: 12px;
+  }
+
+
+
+
+
+  /* RESUME_SECTION RESPONSIVE start */
+
+
+
+  .v_line1{
+
+height: 56.5vh;
+    width: 18px;
+    border-radius: 5px;
+}
+
+.detail_box {
+      
+
+
 }
 
 

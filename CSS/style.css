@@ -327,7 +327,8 @@
     /* Offcanvas Menus */
     .offcanvas.offcanvas-full {
       width: 100%;
-      background-color: #000;
+      background-color: rgba(30, 30, 30, 0.7);
+      backdrop-filter: blur(10px);
     }
 
     .offcanvas.offcanvas-nav {
@@ -874,15 +875,6 @@
   background: #2563eb;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .expert-area-card,
-  .work-experince-card,
-  .lets-together {
-    width: 100%;
-    max-width: 95%;
-  }
-}
 
 
 
@@ -944,7 +936,7 @@
 
   .profile-title span {
     color: #2979ff;
-    font-style: italic;
+   
   }
 
   .profile-subtitle {
@@ -957,6 +949,7 @@
   .stats-container {
   display: flex;
   justify-content: space-between;
+
   gap: 16px;
   padding: 16px 24px;
   border-radius: 16px;
@@ -1087,15 +1080,6 @@ font-size: 16px;
     margin-left: 4px;
     height: 3px;
     }
-    /* Responsive: Show 1 card per slide on small devices */
-    @media (max-width: 768px) {
-      .testimonial-card {
-       width: 98%;
-        margin-right: 11px;
-      
-      }
-    }
-
 
 
 
@@ -1170,7 +1154,7 @@ font-size: 16px;
 
 .v_line1{
 
-height: 62.5vh;
+height: 56.5vh;
     width: 28px;
     border-radius: 5px;
 }
@@ -1214,7 +1198,7 @@ height: 62.5vh;
     align-items: center;
     justify-content: center;
     font-weight: 600;
-    background-color: #645b5b;
+   background: linear-gradient(135deg, #645b5b, #4b3d3d, #2e2a2a);
     margin-left: -12px;
 }
 
