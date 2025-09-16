@@ -480,14 +480,15 @@
 
 }
 
-.call-btn {
+.call-btn{
     background-color: #F1F1F1;
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255,255,255,0.1);
     box-shadow: 0px 32px 64px 0px rgba(0, 0, 0, 0.075), 0px 2.15px 0.5px 0px rgba(0, 0, 0, 0.25), 0px 24px 24px 0px rgba(8, 8, 8, 0.04), 0px 6px 13px 0px rgba(8, 8, 8, 0.03), 0px 6px 4px 0px rgba(8, 8, 8, 0.05), 0px 5px 1.5px 0px rgba(8, 8, 8, 0.05);
 }
 
-.mail-btn {
+
+.mail-btn  {
  background-image: linear-gradient(180deg, #779DFF 0%, #2D68FF 100%);
 
       color: #fff;
@@ -498,7 +499,18 @@
       margin-left: 15px;
       text-decoration: none;
 }
-
+.mail-btn a {
+     
+      text-decoration: none;
+      list-style: none;
+      color: var(--bg-white);
+    }
+.call-btn a
+{
+  text-decoration: none;
+  list-style: none;
+  color: var(--title-dark);
+}
 .icon-container {
   background-color: #F1F1F1;
   backdrop-filter: blur(10px);
@@ -850,12 +862,12 @@
 }
 
 .experience-list span.text-sm {
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--text-white);
-  opacity: 0.7;
-  margin-left: 240px;
-  margin-top: -11%;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-white);
+    opacity: 0.7;
+    margin-left: 221px;
+    margin-top: -7%;
 }
 
 
