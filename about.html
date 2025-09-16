@@ -369,24 +369,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-// GSAP Animation
-
-
-  gsap.utils.toArray(".main-card, .about-wrapper, .testimonial-card, .collab-card").forEach((el) => {
-    gsap.from(el, {
-      scrollTrigger: {
-        trigger: el,
-        start: "top 80%", // animation triggers when element enters 80% of viewport
-        toggleActions: "play none none reverse"
-      },
-      opacity: 0,
-      scale: 0.95, // slightly smaller
-      duration: 0.6,
-      ease: "power2.out",
-      stagger: 0.1
-    });
-  });
-
 
      </script>
 </body>
