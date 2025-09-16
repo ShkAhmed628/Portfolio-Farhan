@@ -332,7 +332,7 @@
     }
 
     .offcanvas.offcanvas-nav {
-      width: 60%;
+      width: 80%;
       background-color: #fff;
     }
 
@@ -348,6 +348,7 @@
 
     .offcanvas-nav .nav-link i {
       margin-right: 8px;
+      outline: none;
     }
 
     .offcanvas-nav .nav-link:hover {
@@ -357,6 +358,11 @@
     .offcanvas-nav .btn-lets-talk {
       display: inline-block;
       margin-top: 20px;
+    }
+    .btn-close
+    {
+      border: none;
+      outline: none;
     }
 
 
@@ -1160,10 +1166,14 @@ font-size: 16px;
   justify-content: space-between;
   align-items: center;
 }
+.line-header
+{
+  width: 50px;
+}
 
 .v_line1{
 
-height: 56.5vh;
+    height: 363px;
     width: 28px;
     border-radius: 5px;
 }
@@ -1230,8 +1240,11 @@ height: 56.5vh;
     margin-bottom: 50px;
     height: 3px;
     }
-
-
+/* 
+.service-wrapper
+{
+  padding: 0px;
+} */
 
 
 .service-container {

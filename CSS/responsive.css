@@ -71,12 +71,23 @@
   }
 
   .text-lg,
-  .text-lg-2,
-  .text-lg-3,
-  .text-lg-4 {
-    font-size: 22px !important;
+  .text-lg-2
+  {
+    font-size: 31px !important;
     line-height: 30px !important;
   }
+
+
+  .text-lg-3
+  {
+    font-size: 23px !important;
+    line-height: 30px !important;
+  }
+   .text-lg-4 {
+    font-size: 28px !important;
+    line-height: 30px !important;
+  }
+
 
 
 
@@ -185,6 +196,11 @@
     font-size: 16px !important;
   }
 
+  .text-md
+  {
+    font-size: 20px !important;
+  }
+
 
     .experience-list span.text-sm {
        
@@ -219,6 +235,7 @@
   text-align: center;
         display: flex;
         flex-direction: row;
+        align-items: center;
         justify-content: space-between;
     }
 
@@ -253,7 +270,7 @@
      padding-top: 20px;
 }
     .navbar-brand {
-        font-size: 14px;
+        font-size: 26px;
         margin-left: 0px;
     }
 
@@ -299,20 +316,85 @@
 
   /* RESUME_SECTION RESPONSIVE start */
 
-
+  .resume-wrapper
+ {
+   width: 340px;
+    margin-left: 9px;
+     padding-top: 20px;
+ }
+ 
 
   .v_line1{
 
-height: 56.5vh;
+height: 83.5vh;
     width: 18px;
     border-radius: 5px;
 }
 
+.line-header
+{
+   width: 40px;
+}
+
+.detail_box .duration {
+    font-size: 0.7rem !important;
+    position: absolute;
+    left: 5%;
+    top: 80%;
+}
+.progress {
+    width: 98%;
+    height: 16px;
+}
 
 
+
+
+
+/* service section  */
+
+
+.service-wrapper
+{
+   width: 352px;
+    padding-left: 15px;
+    margin-left: 9px;
+    padding-top: 17px; 
 
 }
 
+
+.collab-box {
+    width: 100%;
+    margin-top: 21px;
+    padding: 12px 6px ;
+}
+
+
+
+
+/* work-section */
+
+
+.work-wrapper
+{
+         width: 331px;
+        padding-left: 15px;
+        margin-left: 12px;
+        padding-top: 17px;
+}
+
+
+#work-item img {
+    width: 276px;
+    height: 178px;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 20px 20px 8px 8px;
+    padding-bottom: 12px;
+}
+
+}
 
 
 
