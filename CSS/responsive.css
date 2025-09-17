@@ -256,7 +256,10 @@
     width: 319px;
     flex-shrink: 0;
 }
-
+.project-item video {
+    width: 261px;
+ 
+}
 
 
 
@@ -326,7 +329,7 @@
 
   .v_line1{
 
-    height: 73.5vh;
+   height: 64.5vh;
     width: 18px;
     border-radius: 5px;
 }
@@ -356,7 +359,7 @@
 
 .service-wrapper
 {
-        width: 339px;
+         width: 321px;
         padding-left: 10px;
         margin-left: 12px;
         padding-top: 17px;

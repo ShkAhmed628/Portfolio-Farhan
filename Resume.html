@@ -62,7 +62,7 @@
                     </li>
                     
                          </ul>
-                         <a href="#" class="btn-lets-talk">Let's Talk</a>
+                         <a href="https://wa.me/923275871601" class="btn-lets-talk">Let's Talk</a>
                     </div>
                </div>
           </nav>
@@ -100,7 +100,7 @@
                          <a class="nav-link" href="work.html"><i class="bi bi-layers"></i> Works</a>
                     </li>
                </ul>
-               <a href="#" class="btn-lets-talk">Let's Talk</a>
+               <a href="https://wa.me/923275871601" target="_blank" class="btn-lets-talk">Let's Talk</a>
           </div>
      </div>
         <!-- Your main content goes here -->
@@ -277,7 +277,7 @@
                                                     digital experiences that 🌟 captivate and engage. Let’s bring 🚀 your<br />
                                                     vision to life!
                                                   </p>
-                                                  <button>Let’s Talk With Us</button>
+                                                   <a href="https://wa.me/923275871601"><button>Let’s Talk With Us</button></a>
                                                 </div>
 
 
@@ -328,80 +328,9 @@
                  
                   
 
-     <!-- JavaScript for Offcanvas Behavior -->
-     <script>
-          document.addEventListener('DOMContentLoaded', function () {
-               const fullOffcanvas = document.getElementById('fullOffcanvas');
-               const navOffcanvas = new bootstrap.Offcanvas(document.getElementById('navOffcanvas'));
-
-               fullOffcanvas.addEventListener('shown.bs.offcanvas', function () {
-                    setTimeout(() => {
-                         navOffcanvas.show();
-                    }, 300);
-               });
-
-               document.getElementById('navOffcanvas').addEventListener('hidden.bs.offcanvas', function () {
-                    const fullOffcanvasInstance = bootstrap.Offcanvas.getInstance(fullOffcanvas);
-                    if (fullOffcanvasInstance) {
-                         fullOffcanvasInstance.hide();
-                    }
-               });
-          });
-
-
-
-
-            document.addEventListener("DOMContentLoaded", () => {
-      const allCircles = document.querySelectorAll('.circle-progress');
-
-      allCircles.forEach(circle => {
-        const progressCircle = circle.querySelector('.progress-ring');
-        const text = circle.querySelector('h3');
-        const percent = parseInt(circle.getAttribute('data-percent'));
-
-        const radius = 70;
-        const circumference = 2 * Math.PI * radius;
-
-        progressCircle.style.strokeDasharray = circumference;
-        progressCircle.style.strokeDashoffset = circumference;
-
-        let current = 0;
-        const speed = 20; // ms
-
-        const update = setInterval(() => {
-          if (current <= percent) {
-            const offset = circumference - (current / 100) * circumference;
-            progressCircle.style.strokeDashoffset = offset;
-            text.textContent = `${current}%`;
-            current++;
-          } else {
-            clearInterval(update);
-          }
-        }, speed);
-      });
-    });
+     <!-- JavaScript  -->
+     <script src="js/script.js"></script>
      
-
-        // Animate skill bars
-                      gsap.utils.toArray(".skill-bar").forEach(bar => {
-                        let progress = bar.dataset.progress;
-                        gsap.fromTo(bar,
-                          { width: "0%" },
-                          {
-                            width: progress + "%",
-                            duration: 1,
-                            ease: "power1.out",
-                            scrollTrigger: {
-                              trigger: bar,
-                              start: "top 100%",
-                              
-                            }
-                          }
-                        );
-                      });
-
-
-     </script>
 </body>
 
 </html>

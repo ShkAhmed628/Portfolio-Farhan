@@ -64,7 +64,7 @@
                     
                   
                          </ul>
-                         <a href="#" class="btn-lets-talk">Let's Talk</a>
+                         <a href="https://wa.me/923275871601" class="btn-lets-talk">Let's Talk</a>
                     </div>
                </div>
           </nav>
@@ -102,7 +102,7 @@
                          <a class="nav-link" href="work.html"><i class="bi bi-layers"></i> Works</a>
                     </li>
                </ul>
-               <a href="#" class="btn-lets-talk">Let's Talk</a>
+               <a href="https://wa.me/923275871601" target="_blank" class="btn-lets-talk">Let's Talk</a>
           </div>
      </div>
       
@@ -202,7 +202,7 @@
                 >
                   Your browser does not support the video tag.
                 </video>
-              <h3 class="text-sm">Lily Jay Inspires 2 to Embrace Islam</h3>
+              <h3 class="text-sm">Lily Jay Inspires Two Reverts</h3>
               <p class="p-small">2025 July</p>
               <i class="fas fa-arrow-up-right-from-square arrow-icon mt-2"></i>
             </div>
@@ -334,7 +334,7 @@
                                        Open to Creative Collaborations 🌍<br>
                                       <span>Designing Visuals That Resonate ✨</span>
                                    </p>
-                                 <button class="lets-btn">Let’s Talk</button>
+                                 <a href="https://wa.me/923275871601" target="_blank"><button class="lets-btn">Let’s Talk</button></a>
                                </div>
                          </section>
 
@@ -374,71 +374,17 @@
 
 
 
-     <!-- GSAP Core -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+      <!-- GSAP Core -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
      <!-- ScrollTrigger Plugin -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+      <!-- CUSTOM JS SCRIPT  -->
 
+      <script src="js/script.js"></script>
 
-     <!-- JavaScript for Offcanvas Behavior -->
-     <script>
-          document.addEventListener('DOMContentLoaded', function () {
-               const fullOffcanvas = document.getElementById('fullOffcanvas');
-               const navOffcanvas = new bootstrap.Offcanvas(document.getElementById('navOffcanvas'));
-
-               fullOffcanvas.addEventListener('shown.bs.offcanvas', function () {
-                    setTimeout(() => {
-                         navOffcanvas.show();
-                    }, 300);
-               });
-
-               document.getElementById('navOffcanvas').addEventListener('hidden.bs.offcanvas', function () {
-                    const fullOffcanvasInstance = bootstrap.Offcanvas.getInstance(fullOffcanvas);
-                    if (fullOffcanvasInstance) {
-                         fullOffcanvasInstance.hide();
-                    }
-               });
-          });
-  
-
-
-
-document.addEventListener("DOMContentLoaded", function () {
-  gsap.registerPlugin(ScrollTrigger);
-
-  gsap.fromTo(
-    ".boxes",
-    {
-      scale: 0.8,
-      opacity: 0,
-      transformOrigin: "center center"
-    },
-    {
-      scale: 1,
-      opacity: 1,
-      duration: 1,
-      ease: "power4.out",
-      stagger: {
-        each: 0.25,
-        from: "start"
-      },
-      scrollTrigger: {
-        trigger: ".boxes",
-        start: "top 80%",   // when .boxes top hits 80% of viewport
-        end: "bottom 20%",
-        toggleActions: "play none none reverse",
-        once: false,        // Set to true if you want animation only once
-        markers: false      // Set to true for debug markers
-      }
-    }
-  );
-});
-
-
-
-
-   </script>
+   
 </body>
 
 </html>
