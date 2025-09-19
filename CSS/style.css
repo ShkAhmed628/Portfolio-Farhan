@@ -27,6 +27,7 @@
     /* Background Color */
     --bg-black: #090b3c;
     --bg-white: #fff;
+    --bg-body: #1B1B1B;
  
 
     /* Text Color */
@@ -35,6 +36,9 @@
     --p-gray:#A8A8A8;
     --dark-gray: #636A7C;
     --title-dark: #181D2A;
+    --border:rgba(255,255,255,0.1);
+    --hover-bg: rgba(255, 255, 255, 0.05);
+     --testmonial-box:#2a2a2a;
  
    
 
@@ -43,6 +47,57 @@
   --Primary-font :  "Inter", Sans-serif;
   --secondary-font :'Poppins',sans-serif;
 }
+
+
+/* ===========================
+
+THEME TOGGLE BUTTON
+
+=========================== */
+
+.btn-theme {
+
+left: 82%;
+top: 29%;
+border: none;
+position: absolute;
+background: transparent;
+color: yellowgreen;
+font-size: 1.3rem;
+cursor: pointer;
+transition: 0.3s ease;
+
+}
+
+.btn-theme:hover {
+transform: scale(1.1);
+opacity: 0.8;
+
+}
+
+
+body.light-theme {
+  /* Background Color */
+  --bg-body: #ffffff;
+  --bg-black: #f5f5f5;
+  --bg-white: #090b3c;
+
+  /* Text Color */
+  --text-black: #181D2A;
+  --text-white: #000000;
+  --p-gray: #555555;
+  --dark-gray: #333333;
+  --title-dark: #2D68FF;
+   --border:rgb(250, 218, 218);
+   ---hover-bg: #8d7a7a;
+   --testmonial-box:#e7cece;
+  
+
+  /* Fonts remain the same */
+}
+
+
+
 
 /* Hide scrollbar for project-card */
 .project-card {
@@ -179,10 +234,10 @@
 
   
 
-
+/* Common box styles */
   .boxes
   {
-      border: 1px solid rgba(255,255,255,0.1);
+      border: 1px solid var(--border);
       transition: all 0.3s ease !important;
       background: linear-gradient(180deg, rgba(253, 253, 253, 0.015) 0%, rgba(253, 253, 253, 0.05) 100%);
       transition: background-color 0.3s, box-shadow 0.3s;
@@ -191,10 +246,13 @@
     }
 
 
+
+
+
     
     /* Navbar Styles */
     body {
-        background-color: #1B1B1B;
+        background-color: var(--bg-body);
     }
     
     #navbar-section {
@@ -220,7 +278,7 @@
     .navbar-brand {
       font-size: 32px;
       font-weight: bold;
-      color: white !important;
+      color: var(--bg-white) !important;
     }
 
     .navbar-brand span {
@@ -913,7 +971,7 @@
     .fotter-bar {
        
       backdrop-filter: blur(10px);
-        border: 1px solid rgba(255,255,255,0.1);
+        border: 1px solid var(--border);
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -970,6 +1028,7 @@
     font-size: 1.1rem;
     line-height: 1.5;
     color: #bbb;
+   
     margin-bottom: 30px;
   }
 
@@ -980,7 +1039,7 @@
   gap: 16px;
   padding: 16px 24px;
   border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--border);
     background: linear-gradient(180deg, rgba(253, 253, 253, 0.015) 0%, rgba(253, 253, 253, 0.05) 100%);
   width: 100%;
   margin-top: 30px;
@@ -997,7 +1056,7 @@
     border-radius: 12px;
     transition: background-color 0.3s ease;
     
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--border);
     padding-bottom: 15px;
     
 }
@@ -1006,8 +1065,10 @@
 
 
 .stat-card:hover {
-  background-color: #272323;
+  background-color: var(--hover-bg);
 }
+
+
 
 .stat-icon i {
 font-size: 16px;
@@ -1028,7 +1089,7 @@ font-size: 16px;
 .stat-number {
   font-size: 1rem;
   font-weight: 700;
-  color: #fff;
+  color: var(--bg-white);
       line-height: 34px;
 }
 
@@ -1066,9 +1127,9 @@ font-size: 16px;
     padding: 12px;
     margin-left: 0px;
     margin-right: 13px;
-    background-color: #2a2a2a;
+    background-color: var(--testminial-box);
     border-radius: 15px;
-    border: 1px solid #3a3a3a;
+    border: 1px solid var(--border);
     padding: 20px;
     /* margin: 0px; */
     box-sizing: border-box;
@@ -1097,7 +1158,7 @@ font-size: 16px;
 
     .testimonial-title {
       font-size: 13px;
-      color: #aaa;
+      color: var(--p-gray);
     }
  
     .hr {

@@ -67,6 +67,16 @@
                     
                          </ul>
                          <a href="#" class="btn-lets-talk">Let's Talk</a>
+
+                         
+                          <!-- Theme Toggle Button -->
+
+                    <button id="theme-toggle" class="btn-theme">
+
+                     <i class="bi bi-sun"></i>
+
+                       </button>
+    
                     </div>
                </div>
           </nav>
@@ -166,7 +176,7 @@
                                         Professional Vedio Editor!
                                       </h1>
                                    </div>
-                                   <p style="color: rgb(211, 185, 185);">
+                                   <p class="var(--p-gray)">
                                     I specialize in blending design and development to create clean, <br>user-focused digital experiences that prioritize functionality<br> accessibility, and visual clarity.
                                    </p>
                    
@@ -307,6 +317,42 @@
      <!-- gsap JS --> -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+
+
+
+       <script>
+
+        
+  const toggleBtn = document.getElementById("theme-toggle");
+
+const body = document.body;
+
+
+toggleBtn.addEventListener("click", () => {
+
+body.classList.toggle("light-theme");
+
+
+// Toggle icon between sun & moon
+
+if (body.classList.contains("light-theme")) {
+
+toggleBtn.innerHTML = '<i class="bi bi-moon"></i>';
+
+toggleBtn.style.color = "brown";
+
+} else {
+
+toggleBtn.innerHTML = '<i class="bi bi-sun"></i>';
+
+toggleBtn.style.color = "yellow";
+
+}
+
+});
+      </script>
+
 
 
      <!-- CUSTOM JavaScript -->

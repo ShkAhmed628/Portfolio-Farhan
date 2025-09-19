@@ -65,7 +65,19 @@
                   
                          </ul>
                          <a href="https://wa.me/923275871601" class="btn-lets-talk">Let's Talk</a>
-                    </div>
+                       
+
+
+                          <!-- Theme Toggle Button -->
+
+                    <button id="theme-toggle" class="btn-theme">
+
+                     <i class="bi bi-sun"></i>
+
+                       </button>
+    
+                        
+
                </div>
           </nav>
      </section>
@@ -380,10 +392,45 @@
      <!-- ScrollTrigger Plugin -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     
-      <!-- CUSTOM JS SCRIPT  -->
+    
+<!-- script for toggle button -->
+
+      <script>
+
+        
+  const toggleBtn = document.getElementById("theme-toggle");
+
+const body = document.body;
+
+
+toggleBtn.addEventListener("click", () => {
+
+body.classList.toggle("light-theme");
+
+
+// Toggle icon between sun & moon
+
+if (body.classList.contains("light-theme")) {
+
+toggleBtn.innerHTML = '<i class="bi bi-moon"></i>';
+
+toggleBtn.style.color = "brown";
+
+} else {
+
+toggleBtn.innerHTML = '<i class="bi bi-sun"></i>';
+
+toggleBtn.style.color = "yellow";
+
+}
+
+});
+      </script>
+
+
+  <!-- CUSTOM JS SCRIPT  -->
 
       <script src="js/script.js"></script>
-
    
 </body>
 

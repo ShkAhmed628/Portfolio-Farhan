@@ -3,6 +3,47 @@
 
 
 
+// light-theme.js
+
+
+            let navbar = document.querySelector('.side_panel'); 
+            let toggler = document.getElementById("toggler");
+            toggler.innerHTML = `<i class="fa-solid fa-bars"></i>`;
+        
+            toggler.addEventListener('click', () => {
+                navbar.classList.toggle("show");
+
+                if (navbar.classList.contains("show")) {
+                    toggler.innerHTML = `<i class="fa-solid fa-xmark"></i>`; // Change to close icon
+                } else {
+                    toggler.innerHTML = `<i class="fa-solid fa-bars"></i>`; // Change back to menu icon
+                }
+
+            });
+
+
+            const themeSwitch = document.getElementById("themeSwitch");
+const body = document.body;
+
+// Load saved theme
+if (localStorage.getItem("theme") === "dark") {
+  body.classList.add("dark-theme");
+  themeSwitch.checked = true;
+}
+
+themeSwitch.addEventListener("change", () => {
+  if (themeSwitch.checked) {
+    body.classList.add("dark-theme");
+    localStorage.setItem("theme", "dark");
+  } else {
+    body.classList.remove("dark-theme");
+    localStorage.setItem("theme", "light");
+  }
+});
+
+
+
+
 //   <!-- JavaScript for Offcanvas Behavior -->
    
           document.addEventListener('DOMContentLoaded', function () {
@@ -285,6 +326,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+
+
+
+      // toggle button js 
 
 
 
