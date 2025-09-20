@@ -1,45 +1,45 @@
 
+
+// light theme js 
+
+
+const toggleBtn = document.getElementById("theme-toggle");
+const body = document.body;
+
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme === "light") {
+  body.classList.add("light-theme");
+  toggleBtn.innerHTML = '<i class="bi bi-moon"></i>';
+  toggleBtn.style.color = "brown";
+} else {
+  body.classList.remove("light-theme");
+  toggleBtn.innerHTML = '<i class="bi bi-sun"></i>';
+  toggleBtn.style.color = "yellow";
+}
+
+
+toggleBtn.addEventListener("click", () => {
+  body.classList.toggle("light-theme");
+
+  if (body.classList.contains("light-theme")) {
+    toggleBtn.innerHTML = '<i class="bi bi-moon"></i>';
+    toggleBtn.style.color = "brown";
+    localStorage.setItem("theme", "light");
+  } else {
+    toggleBtn.innerHTML = '<i class="bi bi-sun"></i>';
+    toggleBtn.style.color = "yellow";
+    localStorage.setItem("theme", "dark");
+  }
+});
+
+
+
+
 // HOME PAGE JAVASCRIPT 
 
 
 
 // light-theme.js
-
-
-            let navbar = document.querySelector('.side_panel'); 
-            let toggler = document.getElementById("toggler");
-            toggler.innerHTML = `<i class="fa-solid fa-bars"></i>`;
-        
-            toggler.addEventListener('click', () => {
-                navbar.classList.toggle("show");
-
-                if (navbar.classList.contains("show")) {
-                    toggler.innerHTML = `<i class="fa-solid fa-xmark"></i>`; // Change to close icon
-                } else {
-                    toggler.innerHTML = `<i class="fa-solid fa-bars"></i>`; // Change back to menu icon
-                }
-
-            });
-
-
-            const themeSwitch = document.getElementById("themeSwitch");
-const body = document.body;
-
-// Load saved theme
-if (localStorage.getItem("theme") === "dark") {
-  body.classList.add("dark-theme");
-  themeSwitch.checked = true;
-}
-
-themeSwitch.addEventListener("change", () => {
-  if (themeSwitch.checked) {
-    body.classList.add("dark-theme");
-    localStorage.setItem("theme", "dark");
-  } else {
-    body.classList.remove("dark-theme");
-    localStorage.setItem("theme", "light");
-  }
-});
 
 
 

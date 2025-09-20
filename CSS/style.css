@@ -88,7 +88,8 @@ body.light-theme {
   --p-gray: #555555;
   --dark-gray: #333333;
   --title-dark: #2D68FF;
-   --border:rgb(250, 218, 218);
+   --border:rgb(233 198 198);
+   
    ---hover-bg: #8d7a7a;
    --testmonial-box:#e7cece;
   
@@ -163,7 +164,7 @@ body.light-theme {
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
-    color: #636A7C;
+    color: var(--dark-gray);
   }
 
    .text-md
@@ -172,7 +173,7 @@ body.light-theme {
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
-    color: #ffffff;
+    color: var(--bg-white);
   }
      .text-md-2
   {
@@ -180,7 +181,7 @@ body.light-theme {
     font-size: 20px;
     font-weight: 600;
     line-height: 24px;
-    color: #ffffff;
+    color: var(--bg-white);
   }
   
 
@@ -310,7 +311,6 @@ body.light-theme {
     margin-right: 8px;
     font-size: 16px;
     background-origin: padding-box, border-box;
-    background-image: linear-gradient(to bottom right, #282828, #282828), linear-gradient(to bottom right, rgba(253, 253, 253, 0.4) 0%, rgba(253, 253, 253, 0) 40%, rgba(253, 253, 253, 0) 60%, rgba(253, 253, 253, 0.1) 100%);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255,255,255,0.1);
      box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.5), 0px 2.15px 0.5px rgba(0, 0, 0, 0.25), 0px 5px 1.5px rgba(8, 8, 8, 0.2), 0px 6px 4px rgba(8, 8, 8, 0.16), 0px 6px 13px rgba(8, 8, 8, 0.12), 0px 24px 24px rgba(8, 8, 8, 0.08), inset 2px 4px 16px rgba(253, 253, 253, 0.05);
@@ -592,7 +592,7 @@ body.light-theme {
 .text-sm-2 {
   font-size: 14px;
   font-weight: 500;
-  color: #111;
+  color: var(--text-white);
   white-space: nowrap;
 }
 
@@ -837,7 +837,7 @@ body.light-theme {
   height: 40px;
   border-radius: 12px;
   object-fit: cover;
-  border: 2px solid rgba(255, 255, 255, 0.08);
+  border: 2px solid var(--border);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   background-color: #fff;
 
@@ -894,7 +894,7 @@ body.light-theme {
   height: 42px;
   border-radius: 8px;
   object-fit: cover;
-  background: #fff;
+  background:  var(--bg-white);
   margin-top: 11px;
   margin-left: 15px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -1075,7 +1075,7 @@ font-size: 16px;
     color: #ffffff;
     margin-left: 10px;
     margin-top: 13px;
-    background-color: #585151;
+    background-color: var(--p-gray);
     padding: 10px;
     border-radius: 50%;
 }
@@ -1153,7 +1153,7 @@ font-size: 16px;
       font-weight: bold;
       margin-top: 10px;
       margin-bottom: 5px;
-      color: white;
+      color: var(--bg-white);
     }
 
     .testimonial-title {
@@ -1162,7 +1162,7 @@ font-size: 16px;
     }
  
     .hr {
-       border-top: 1px solid #444;
+       border-top: 1px solid var(--border);
     margin-top: 40px;
     width: 98.5%;
     margin-left: 4px;
@@ -1206,16 +1206,6 @@ font-size: 16px;
     }
 
    
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1320,6 +1310,13 @@ font-size: 16px;
 } */
 
 
+
+
+
+/* <---------- service section  ---------->  */
+
+
+
 .service-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -1337,7 +1334,7 @@ font-size: 16px;
   display: flex;
   flex-direction: column;
   gap: 12px;
- border: 1px solid rgba(255,255,255,0.1);
+ border: 1px solid var(--border);
     padding-bottom: 20px;
      
 }
@@ -1383,6 +1380,10 @@ font-size: 16px;
 
     padding: 50px;
 }
+
+
+
+/* work section css */
 
 
 
