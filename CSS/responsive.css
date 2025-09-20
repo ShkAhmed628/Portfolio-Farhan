@@ -127,10 +127,15 @@ THEME TOGGLE BUTTON
 
 .btn-theme {
 
-left: 90.5%;
+left: 76.5%;
 top: 29%;
 
 }
+
+  body.light-theme .navbar-toggler-icon  {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+      margin-right: -24px;    
+    }
 
 .btn-theme:hover {
 
@@ -187,7 +192,7 @@ opacity: 0.8;
 
   {
      
-      width: 111px;
+      width: 123px;
       display: flex;
       justify-content: center;
       margin-left: 0;
@@ -198,7 +203,11 @@ opacity: 0.8;
     color: var(--text-white) !important;
     margin-left: -15px;
 }
+.offcanvas-backdrop.show
 
+ {
+    opacity: 0;
+}
 
 /* collab-card  */
 
