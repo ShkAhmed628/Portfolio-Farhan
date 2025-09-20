@@ -609,7 +609,7 @@ body.light-theme {
 .text-sm-2 {
   font-size: 14px;
   font-weight: 500;
-  color: var(--text-white);
+  color: var(--text-black);
   white-space: nowrap;
 }
 
