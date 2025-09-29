@@ -1455,6 +1455,41 @@ font-size: 16px;
 }
 
 
+/* tabs css */
+
+
+/* Work Tabs Styling */
+#workTab {
+  border-bottom: none; /* remove default underline */
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+#workTab .nav-link {
+  border: none;
+  border-radius: 25px;
+  padding: 10px 25px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #555;
+  background: #f1f1f1;
+  transition: all 0.3s ease;
+}
+
+#workTab .nav-link:hover {
+  background: #e0e0e0;
+  color: #000;
+}
+
+#workTab .nav-link.active {
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+  transform: translateY(-2px);
+}
 
 
 
