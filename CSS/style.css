@@ -713,7 +713,7 @@ body.light-theme {
     height: 176px;
     object-fit: cover;
     object-position: center center;
-    border-radius: 20px 20px 8px 8px;
+   
     padding-bottom: 12px;
     }
 
@@ -1453,6 +1453,27 @@ font-size: 16px;
     margin-bottom: 14px;
 
 }
+
+.inner-work-card-short
+{
+    
+    padding: 10px 10px 0px 17px;
+    margin-bottom: 14px;
+    width: 340px; 
+}
+
+
+
+
+.inner-work-card-short video
+{
+    
+    padding: 10px 0px 0px 0px;
+    margin-bottom: 14px;
+    height: 400px;
+  
+}
+
 
 
 
