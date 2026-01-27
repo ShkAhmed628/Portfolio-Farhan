@@ -513,7 +513,7 @@ body.light-theme {
 
 .profile-img {
      width: 150px;
-    height: 139px;
+    height: 150px;
     border-radius: 20px;
     object-fit: cover;
     margin-bottom: 1rem;
@@ -1092,15 +1092,29 @@ font-size: 16px;
     color: #ffffff;
     margin-left: 10px;
     margin-top: 13px;
-    background-color: var(--p-gray);
+    background-color: var(--dark-gray);
     padding: 10px;
     border-radius: 50%;
 }
 
+.stat-icon-2 i
+{
+  font-size: 16px;
+    color: #ffffff;
+    margin-left: 10px;
+    margin-top: 13px;
+    width: 36px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--dark-gray);
+    padding: 10px;
+    border-radius: 50%;
+}
 .stat-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
 }
 
 .stat-number {
